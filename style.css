@@ -1,0 +1,75 @@
+.circle-1 {
+    align-items: center;
+    background: #aaa;
+
+    /* 円のサイズ（高さにもなる） */
+    border-radius: 100%;
+
+    /* 以下のFlexboxで文字を中央寄せ */
+    display: flex;
+    justify-content: center;
+    max-width: 240px;
+    padding: 16px;
+}
+
+.circle-1::before {
+    content: '';
+
+    /* 擬似要素で正円を作る */
+    display: block;
+    padding-top: 100%;
+}
+
+/*  circle-2  */
+#circle-2 .circle-2text {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(22em * (1.41421356237 - 1) / 2);
+    width: 22em;
+    height: 22em;
+    border-radius: 50%;
+    font-size: 1vw;
+    background: pink;
+}
+
+@media screen and (max-width: 1000px) {
+    #circle-2 .circle-2text {
+        font-size: 10px;
+    }
+}
+
+/*  circle-3  */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.circle-3 {
+    width: 200px;
+    height: 200px;
+    margin: 6px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-3 p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.dark {
+    background: #000;
+    color: #FFF;
+}
+
+.vertical {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    word-spacing: -8px;
+}
