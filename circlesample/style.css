@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: calc(22em * (1.4142 - 1) / 2);
+    padding: calc(22em * (1.41421356237 - 1) / 2);
     width: 22em;
     height: 22em;
     border-radius: 50%;
